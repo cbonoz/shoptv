@@ -10,6 +10,12 @@ Shop TV
 
 ### Technical
 
+Checkout links powered by square.
+
+Each item has a distinct checkout link which allows the user to submit payment (and any necessary shipping information) from their personal mobile device.
+https://squareup.com/dashboard/ecom/online-checkout/checkout-links
+
+
 ### Screenshots
 <h3>Netflix style app for discovering items to purchase from a public TV</h3>
 <img src='./img/search.png' width=800/>
