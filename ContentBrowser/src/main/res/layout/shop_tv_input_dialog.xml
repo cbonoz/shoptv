@@ -13,22 +13,24 @@
         android:text="" />
 
     <TextView
-        android:id="@+id/conversion_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingBottom="10dp"
-        android:text="" />
-
-    <TextView
         android:id="@+id/btcText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Complete Checkout" />
+        android:layout_marginBottom="10dp"
+        android:text="@string/complete_checkout" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/checkkoutImage"
+        android:id="@+id/checkoutImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:src="@drawable/qr_code"/>
+    </LinearLayout>
 
 </LinearLayout>

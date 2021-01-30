@@ -82,7 +82,7 @@ public class SplashActivity extends BaseActivity implements ICancellableLoad {
         }
         // Check to see if this activity is not called from the TenFootApp.
         if (!getIntent().hasExtra(ContentBrowser.CONTENT_WILL_UPDATE)) {
-            mProgressText.setText(R.string.feed_loading);
+            mProgressText.setText(String.format("%s...", getString(R.string.feed_loading)));
         }
         // If this activity was called from the TenFootApp call activity method.
         else {

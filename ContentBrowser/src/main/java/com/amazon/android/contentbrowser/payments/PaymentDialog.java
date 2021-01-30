@@ -38,9 +38,10 @@ public class PaymentDialog {
                                               DialogInterface.OnClickListener onClickListener)
             throws Exception {
         final double price;
+        final String priceString;
         if (PRICE_MAP.containsKey(content.getId())) {
-            String string = context.getString(PRICE_MAP.get(content.getId()));
-            price = Double.parseDouble(string.substring(1)); // remove $.
+            priceString = context.getString(PRICE_MAP.get(content.getId()));
+            price = Double.parseDouble(priceString.substring(1)); // remove $.
         } else {
             throw new Exception("Could not find price for item: " + content.getId() + ". This needs to be added to the PRICE_MAP.");
         }
@@ -49,11 +50,7 @@ public class PaymentDialog {
                 inflate(R.layout.shop_tv_input_dialog, null, false);
 
         TextView purchaseText = subView.findViewById(R.id.shop_tv_text);
-        purchaseText.setText(String.format(Locale.US, "Scan the QR code below to complete purchase of %s.", content.getTitle()));
-
-        TextView conversionText = subView.findViewById(R.id.conversion_text);
-        final String text = ""; // TODO: replace with additional content.
-        conversionText.setText(text);
+        purchaseText.setText(String.format(Locale.US, "Scan the QR code below to complete purchase of %s.\n\nPrice: %s", content.getTitle(), priceString));
 
         new AlertDialog.Builder(context)
                 .setView(subView)
