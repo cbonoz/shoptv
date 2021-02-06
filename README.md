@@ -25,3 +25,10 @@ Tchibo, for example, could plug into their existing network of shops and place d
 * Install Android Studio
 * Build and run on an android / Fire TV Device
 * For production, would require swapping out the fixed selection of items and connecting to a live catalog of items.
+
+### Screenshots
+<img width=800 src="./img/1.png"/>
+<img width=800 src="./img/2.png"/>
+<img width=800 src="./img/3.png"/>
+<img width=800 src="./img/4.png"/>
+
