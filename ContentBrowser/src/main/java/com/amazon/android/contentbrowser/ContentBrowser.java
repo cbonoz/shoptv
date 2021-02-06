@@ -61,6 +61,7 @@ import com.amazon.utils.StringManipulation;
 import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -395,6 +396,10 @@ public class ContentBrowser implements IContentBrowser, ICancellableLoad {
         result.put("5002", R.string.buy_3);
         result.put("5003", R.string.buy_3);
         result.put("5004", R.string.buy_3);
+        final List<String> foodCategories = Arrays.asList("4000", "4001", "4002", "4003", "4004");
+        for (String category : foodCategories) {
+            result.put(category, R.string.buy_1);
+        }
         return Collections.unmodifiableMap(result);
     }
 
