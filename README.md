@@ -31,4 +31,5 @@ Tchibo, for example, could plug into their existing network of shops and place d
 <img width=800 src="./img/2.png"/>
 <img width=800 src="./img/3.png"/>
 <img width=800 src="./img/4.png"/>
+<img width=800 src="./img/5.png"/>
 
